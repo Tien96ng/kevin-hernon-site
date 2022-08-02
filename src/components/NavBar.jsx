@@ -1,10 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import style from '../../styles/NavBar.module.css';
 
 function NavBar() {
   return (
-      <Navbar id="navbar" bg="light" variant="light" sticky="top">
+      <Navbar id="navbar" className={style.overall} variant="light" sticky="top">
         <Container>
           <Navbar.Brand href="#home">Kevin Hernon</Navbar.Brand>
           <Nav className="me-auto">

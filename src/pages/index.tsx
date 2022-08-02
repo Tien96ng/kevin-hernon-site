@@ -14,6 +14,7 @@ const Home: NextPage = () => {
 
       <main>
         <NavBar />
+        <h1> Kevin Hernon </h1>
       </main>
 
       <footer>
