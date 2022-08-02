@@ -1,0 +1,17 @@
+.header {
+    background-image: linear-gradient(to right, #3d83c2, #3592ca, #476fb8);
+    margin: 0 auto;
+    color: white;
+    text-align: center !important;
+    margin-top: -20rem;
+}
+
+.head {
+    font-weight: 400;
+    font-size: 6rem;
+}
+
+.subHead {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
