@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
-import React, { useState } from 'react';
+import React from 'react';
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
-import NavBar from '../components/NavBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutubeSquare, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Button }  from 'react-bootstrap';
 
 
 const Home: NextPage = () => {
@@ -18,7 +17,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.whiteText}>
-        <NavBar />
         <section className={styles.header}>
           <h1 className={styles.head}> Kevin Hernon </h1>
           <h5 className={styles.subHead}> MBA Student at Seattle University | Video Game Connoisseur | Verteran </h5>

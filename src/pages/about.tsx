@@ -4,11 +4,11 @@ import styles from '../../styles/Home.module.css'
 
 const About: NextPage = () => {
     return (
-        <Container fluid>
+        <Container fluid className={styles.whiteText}>
             <Row>
                 <Col>1</Col>
                 <Col>
-                    <h1 className={`${styles.center}`}> About Me</h1>
+                    <h1 className={`${styles.head} ${styles.center}`}> About Me</h1>
                     <h5 className={`${styles.center} ${styles.subHead}`}>
                         As a passionate and motivated individual, I am constantly striving to improve my knowledge, expand my skillset, and find new opportunities to grow.
                         I am very passionate about video games and want to pursue a career in video games as a producer.

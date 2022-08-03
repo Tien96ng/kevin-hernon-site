@@ -24,7 +24,12 @@ function NavBar() {
         </Container>
       </Navbar>
 
-      <Modal show={show} onHide={handleClose} fullscreen={true} className={style.container}>
+      <Modal 
+        show={show} 
+        onHide={handleClose} 
+        fullscreen={true} 
+        className={style.container}
+      >
         <Modal.Body> 
           <iframe src="https://docdro.id/sz5vqGC" title="resume" height="100%" width="100%" />
         </Modal.Body>
