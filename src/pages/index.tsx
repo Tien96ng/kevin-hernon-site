@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
+import React, { useState } from 'react';
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import NavBar from '../components/NavBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckSquare } from '@fortawesome/free-solid-svg-icons'
-import { faYoutube, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faYoutubeSquare, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 
 const Home: NextPage = () => {
@@ -16,20 +17,22 @@ const Home: NextPage = () => {
         <link rel="icon" href="/img/kevin2.png" />
       </Head>
 
-      <main >
+      <main className={styles.whiteText}>
         <NavBar />
         <section className={styles.header}>
           <h1 className={styles.head}> Kevin Hernon </h1>
-          <h5 className={styles.subHead}> MBA Student at Seattle University | Video Game Connoisseur </h5>
+          <h5 className={styles.subHead}> MBA Student at Seattle University | Video Game Connoisseur | Verteran </h5>
         </section>
 
-        <section className={styles.social}>
-          <FontAwesomeIcon icon={faLinkedin} />
-          <FontAwesomeIcon icon={faYoutube} />
-          <FontAwesomeIcon icon={faFacebook} />
-
+        <section className={`${styles.social} ${styles.center}`}>
+          <FontAwesomeIcon icon={faLinkedin} size="4x" fixedWidth />
+          <FontAwesomeIcon icon={faYoutubeSquare} size="4x" fixedWidth />
+          <FontAwesomeIcon icon={faFacebook} size="4x" fixedWidth />
         </section>
-        
+        <div className={`${styles.center}`}>
+          <Button variant="outline-light" size="lg"> More About Me </Button>
+        </div>
+
       </main>
 
       <footer>
