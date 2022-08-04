@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import React from 'react';
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutubeSquare, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Button }  from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 
 const Home: NextPage = () => {
@@ -19,16 +20,24 @@ const Home: NextPage = () => {
       <main className={styles.whiteText}>
         <section className={styles.header}>
           <h1 className={styles.head}> Kevin Hernon </h1>
-          <h5 className={styles.subHead}> MBA Student at Seattle University | Video Game Connoisseur | Verteran </h5>
+          <h5 className={styles.subHead}> MBA Student at Seattle University | Video Game Connoisseur | Veteran </h5>
         </section>
 
         <section className={`${styles.social} ${styles.center}`}>
-          <FontAwesomeIcon icon={faLinkedin} size="4x" fixedWidth />
-          <FontAwesomeIcon icon={faYoutubeSquare} size="4x" fixedWidth />
-          <FontAwesomeIcon icon={faFacebook} size="4x" fixedWidth />
+          <a href="https://www.linkedin.com/in/kevinhernon253/" target="_blank">
+            <FontAwesomeIcon className={styles.socialLinks} icon={faLinkedin} size="4x" fixedWidth />
+          </a>
+          <a href="https://www.youtube.com/channel/UCbpd4e0-9xS2_FOVCAhueHg" target="_blank">
+            <FontAwesomeIcon icon={faYoutubeSquare} size="4x" fixedWidth />
+          </a>
+          <a href="https://www.facebook.com/kevin.hernon.1" target="_blank">
+            <FontAwesomeIcon icon={faFacebook} size="4x" fixedWidth />
+          </a>
         </section>
         <div className={`${styles.center}`}>
+          <Link href="/about">
           <Button variant="outline-light" size="lg"> More About Me </Button>
+          </Link>
         </div>
 
       </main>
